@@ -1,5 +1,6 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "bento/freebsd-11.1"
+  config.vm.provision "shell", path: "./provision-script.sh"
 end
 
 # vim: filetype=ruby softtabstop=2 shiftwidth=2 tabstop=2 expandtab:
