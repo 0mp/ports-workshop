@@ -1,13 +1,11 @@
 #! /bin/sh -
 
-portsnap auto
+set -eu
 
 pkglist="
-    editors/vim
     ports-mgmt/portlint
     ports-mgmt/porttools
     ports-mgmt/poudriere-devel
-    sysutils/tmux
 "
 pkg update -f
 pkg install -y $pkglist

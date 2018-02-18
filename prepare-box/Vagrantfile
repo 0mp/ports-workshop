@@ -5,7 +5,10 @@ Vagrant.configure("2") do |config|
     v.memory = 2048
   end
   config.vm.box = "bento/freebsd-11.1"
-  config.vm.provision "shell", path: "./provision-script.sh"
+  config.vm.provision "shell", name: "install-ports", path: "./provisions/install-ports.sh"
+  config.vm.provision "shell", name: "install-ports-tools", path: "./provisions/install-ports-tools.sh"
+  config.vm.provision "shell", name: "install-utilities", path: "./provisions/install-utilities.sh"
+  config.vm.provision "shell", name: "configure-environment", path: "./provisions/configure-environment.sh"
 end
 
 # vim: filetype=ruby softtabstop=2 shiftwidth=2 tabstop=2 expandtab:
