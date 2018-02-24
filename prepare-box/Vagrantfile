@@ -10,7 +10,6 @@ Vagrant.configure("2") do |config|
     host.vm.provision "install-ports-tools", type: "shell", path: "./provisions/install-ports-tools.sh"
     host.vm.provision "install-utilities", type: "shell", path: "./provisions/install-utilities.sh"
     host.vm.provision "configure-environment", type: "shell", path: "./provisions/configure-environment.sh"
-    host.vm.provision "zero", type: "shell", path: "./provisions/zero.sh"
 
     host.vm.provider "virtualbox" do |vb|
       #vb.gui = true

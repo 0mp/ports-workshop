@@ -9,4 +9,3 @@ vagrant provision "$vm" --provision-with install-ports
 vagrant provision "$vm" --provision-with install-ports-tools
 vagrant provision "$vm" --provision-with install-utilities
 vagrant provision "$vm" --provision-with configure-environment
-vagrant provision "$vm" --provision-with zero
