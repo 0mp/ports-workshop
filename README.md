@@ -1,7 +1,3 @@
 # FreeBSD Ports workshop infrastructure
 
-## Cheat sheet
-
-Here are some handy commands you can use on provided FreeBSD machine:
-
-* Start a graphical session: `startxfce4`
+See [Wiki](https://github.com/0mp/ports-workshop/wiki) for a cheat sheet and other helpful materials.
