@@ -2,8 +2,10 @@
 
 set -x
 
+vm=workshop-machine
+
 vagrant up --no-provision
-#vagrant provision --provision-with install-ports
-#vagrant provision --provision-with install-ports-tools
-#vagrant provision --provision-with install-utilities
-vagrant provision --provision-with configure-environment
+#vagrant provision "$vm" --provision-with install-ports
+vagrant provision "$vm" --provision-with install-ports-tools
+vagrant provision "$vm" --provision-with install-utilities
+vagrant provision "$vm" --provision-with configure-environment
