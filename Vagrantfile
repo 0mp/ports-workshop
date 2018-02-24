@@ -1,6 +1,6 @@
 Vagrant.configure("2") do |config|
   config.vm.define "workshop-machine" do |host|
-    host.vm.box = ""
+    host.vm.box = "http://freebsd.waw.hackerspace.pl/box.box"
     host.vm.hostname = "workshop-machine"
     host.ssh.shell = "sh"
 
