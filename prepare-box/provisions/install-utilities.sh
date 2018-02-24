@@ -3,6 +3,7 @@
 set -eu
 
 pkglist="
+    editors/nano
     editors/vim
     shells/bash
     sysutils/tmux
